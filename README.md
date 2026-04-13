@@ -22,4 +22,5 @@
 - For all the required packages for this web app, refer to [this](https://github.com/nandhika03/StreamlitWebApp_of_SentimentAnalysis_of_IMDbMoviedata_using_RNN_Tensorflow/blob/main/requirements.txt) document
 
 Credits - All credits goes to KrishNaik as this repo is for learning purposes of his Udemy Course!
-**Thank you for stopping by, happy learning!*
+
+*Thank you for stopping by, happy learning!*
