@@ -1,5 +1,6 @@
 import numpy as np
 import tensorflow as tf
+from pathlib import Path
 from tensorflow.keras.datasets import imdb
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import load_model
@@ -9,7 +10,8 @@ word_index = imdb.get_word_index()
 reverse_word_index = {value: key for key, value in word_index.items()}
 
 # Load the pre-trained model with ReLU activation
-model = load_model("C://Users//Nandhika//Documents//RNN_Imdb//models//RNN_model_imdb.h5")
+MODEL_PATH = Path(__file__).resolve().parent / "models" / "RNN_model_imdb.h5"
+model = load_model(str(MODEL_PATH))
 
 # Step 2: Helper Functions
 # Function to decode reviews
@@ -46,4 +48,3 @@ if st.button('Classify'):
     st.write(f'Prediction Score: {prediction[0][0]}')
 else:
     st.write('Please enter a movie review.')
-
